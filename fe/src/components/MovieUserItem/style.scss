@@ -1,0 +1,34 @@
+@import "../../commons/style.scss";
+.movie-user-item {
+  display: flex;
+  margin-top: 20px;
+  color: $primary-text;
+  img {
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    h4 {
+      margin: 0;
+    }
+    span{
+      font-size: 14px;
+    }
+    .link{
+      text-decoration: none;
+      color: $primary-text;
+      &:hover{
+        color: $primary-color-hover;
+      }
+    }
+    .btn{
+      margin-top: 8px;
+    }
+  }
+}

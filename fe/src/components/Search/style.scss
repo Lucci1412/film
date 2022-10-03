@@ -1,0 +1,35 @@
+.header-search {
+  display: flex;
+  flex: 1;
+  background: white;
+  border-radius: 50px;
+  height: 36px;
+  margin: 0 50px;
+  overflow: hidden;
+  align-items: center;
+  padding-left: 20px;
+  .form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .icon{
+      cursor: pointer;
+    }
+  }
+  input {
+    flex: 1;
+    height: inherit;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+@media only screen  and (max-width: 1023px) {
+  .header-search {
+    display: none;
+  }
+}

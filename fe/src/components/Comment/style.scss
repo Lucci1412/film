@@ -1,0 +1,37 @@
+@import "../../commons/style.scss";
+.comment {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  .comment-info {
+    display: flex;
+    margin-left: 12px;
+    width: 100%;
+    h4{
+        margin: 0;
+        color:$primary-text ;
+        font-size: 15px;
+    }
+    span{
+        margin: 4px 0;
+        font-size: 14px;
+    }
+    flex-direction: column;
+    .comment-widget {
+      display: flex;
+      position: relative;
+
+      .item {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+        .icon{
+            cursor: pointer;
+        }
+        span{
+            margin-left: 6px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../commons/style.scss";
+
+.side-bar {
+  flex: 1;
+  width: 100%;
+  background: $second-color;
+  color: $primary-color;
+  border-radius: 6px;
+  max-height: 320px;
+//   height: calc(100vh - 145px);
+  position: sticky;
+  top: 145px;
+ 
+   ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 0;
+    .link {
+      color: $second-text;
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      padding-left: 15px;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+      &:hover {
+        color: $primary-text;
+      }
+      .icon {
+        margin-right: 8px;
+      }
+    }
+    .link-active {
+      color: $primary-text;
+    }
+  }
+}

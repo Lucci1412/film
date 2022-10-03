@@ -1,0 +1,43 @@
+@import "../commons/style.scss";
+.defaultLayout {
+  background-color: $primary-color;
+  min-height: 100vh;
+  position: relative;
+  .top-fix {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .progress {
+    width: 100%;
+    height: 3px;
+    position: fixed;
+    top:0;
+    z-index: 10000;
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(to right, rgb(184, 2, 216), rgb(255, 0, 43));
+    }
+  }
+}
+.user-layout {
+  background-color: $primary-color;
+  min-height: 100vh;
+  position: relative;
+  .top-fix {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .container {
+    .main {
+      margin-top: 30px;
+      display: flex;
+      .children {
+        flex: 2.5;
+        margin-left: 20px;
+      }
+    }
+  }
+}

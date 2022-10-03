@@ -1,0 +1,58 @@
+@import '../../commons//style.scss';
+.login-form {
+  display: flex;
+  flex-direction: column;
+  .MuiTextField-root {
+    margin-top: 20px;
+  }
+  .MuiCheckbox-root {
+    width: 40px;
+  }
+  .login-form-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .label{
+    display: flex;
+    p{
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  button {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .login-form-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button-facebook,
+    .button-google {
+      min-width: 48%;
+      .icon {
+        font-size: 20px;
+      }
+    }
+    .button-facebook {
+      .icon {
+        color: #3b5998;
+      }
+    }
+    .button-google {
+      .icon {
+        color: #e94820;
+      }
+    }
+
+    p {
+      color: #606266;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin: 0;
+      margin-left: 6px;
+    }
+  }
+}

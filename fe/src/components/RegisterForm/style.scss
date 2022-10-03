@@ -1,0 +1,17 @@
+.register-form {
+  display: flex;
+  flex-direction: column;
+  .MuiTextField-root {
+    margin-top: 15px;
+  }
+  .MuiCheckbox-root {
+    width: 40px;
+  }
+  .label {
+    display: flex;
+    p {
+      margin: 8px 10px;
+      cursor: pointer;
+    }
+  }
+}

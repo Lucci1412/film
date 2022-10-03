@@ -1,0 +1,96 @@
+@import "../../commons/style.scss";
+.rank {
+  flex: 1;
+  flex-direction: column;
+  color: $primary-text;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 0 20px;
+
+  border-radius: 6px;
+  background: $second-color;
+  .rank-header {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    span {
+      height: 100%;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .tab-item-active {
+      border-bottom: 2px solid $primary-color-hover;
+    }
+  }
+}
+.rank-list {
+  display: flex;
+  flex-direction: column;
+  li {
+    display: flex;
+    margin-bottom: 8px;
+
+    img {
+      width: 55px;
+      height: 60px;
+      border-radius: 4px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .info {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin-left: 20px;
+      .link {
+        text-decoration: none;
+      }
+      h4 {
+        color: $primary-text;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500;
+        display: -webkit-box;
+        height: 15px * 1.3;
+        line-height: 1.3;
+        -webkit-line-clamp: 1; /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      span {
+        display: -webkit-box;
+        height: 15px * 1.3;
+        line-height: 1.3;
+        -webkit-line-clamp: 1; /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+        color: $second-text;
+        margin: 2px 0;
+        &:nth-child(3) {
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+.pane-item {
+  display: none;
+}
+
+.pane-item-active {
+  display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .rank {
+    display: none;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../commons//style.scss';
+.navigation-country {
+  position: absolute;
+  margin: 0;
+  padding-left: 0;
+  font-size: 15px;
+  list-style: none;
+  z-index: 1000;
+  background: $second-color;
+  border-radius: 6px;
+  width: 450px;
+  top: 50px;
+  right: 0;
+  .row {
+    width: 100%;
+    margin: 0;
+    margin-left: 20px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+      border-bottom: 14px solid $second-color;
+      right: 55px;
+      top: -14px;
+      z-index: 1000;
+    }
+    .col-country {
+      padding: 0;
+      display: flex;
+      .link {
+        color: $second-text;
+        text-decoration: none;
+        margin: 5px 0;
+        &:hover {
+            color: $primary-text;
+        }
+      }
+    }
+  }
+}

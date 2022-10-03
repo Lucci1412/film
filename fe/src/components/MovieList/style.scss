@@ -1,0 +1,18 @@
+@import '../../commons/style.scss';
+.movie-list {
+  h3 {
+    font-size: 22px;
+    margin-bottom: 0;
+    color: $primary-text;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .row {
+    .movie-list-load {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 300px;
+    }
+  }
+}

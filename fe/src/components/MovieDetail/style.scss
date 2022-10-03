@@ -1,0 +1,116 @@
+@import "../../commons/style.scss";
+.movie-detail {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: $second-text;
+  width: 100%;
+  margin-top: 30px;
+  .movie-detail-link {
+    text-decoration: none;
+    color: $primary-text;
+  }
+  button {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    min-width: 82px;
+  }
+}
+.movie-detail-top {
+  display: flex;
+  width: 100%;
+  .actor-link {
+    color: $second-text;
+    text-decoration: none;
+    &:hover {
+      color: $primary-color-hover;
+    }
+  }
+  .movie-detail-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 20px;
+    h4 {
+      color: $primary-text;
+      margin-top: 0;
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+    h5 {
+      margin: 0;
+      font-size: 18px;
+    }
+    span {
+      font-size: 15px;
+      margin: 2px 0;
+      display: -webkit-box;
+      height: 15px * 1.3;
+      line-height: 1.3;
+      -webkit-line-clamp: 1; /* số dòng hiển thị */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  img {
+    max-height: 310px;
+    max-width: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.movie-detail-episodes {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    color: $primary-text;
+  }
+  ul {
+    display: flex;
+    padding-left: 0;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .movie-detail-lang {
+    max-width: 145px;
+    width: 120px;
+  }
+}
+.movie-detail-content {
+  margin-top: 30px;
+  h4 {
+    margin: 0;
+  }
+  p {
+    margin-top: 0;
+    font-size: 14px;
+  }
+}
+.movie-detail-comment {
+  h4{
+    margin-bottom: 10px;
+  }
+  p {
+    color: red;
+    font-size: 14px;
+    margin: 0;
+  }
+  .list{
+    max-width: 800px;
+    background: $second-color;
+    border-radius: 4px;
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .movie-detail-top {
+    flex-direction: column;
+    .movie-detail-info {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }
+}

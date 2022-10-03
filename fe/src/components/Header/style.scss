@@ -1,0 +1,67 @@
+@import "../../commons/style.scss";
+.header {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  background: $second-color;
+  z-index: 1000;
+  .container {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      font-size: 36px;
+      text-decoration: none;
+      color: $primary-text;
+    }
+  }
+  .link {
+    text-decoration: none;
+    position: relative;
+  }
+}
+
+.header-info {
+  cursor: pointer;
+  span {
+    display: flex;
+    align-items: center;
+    color: $primary-text;
+    h4 {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  }
+}
+.header-menu {
+  margin-right: 20px;
+  display: none;
+  .icon {
+    color: $primary-text;
+  }
+}
+
+//responsive
+@media only screen and (max-width: 1023px) {
+  .header {
+    .container {
+      justify-content: space-between;
+    }
+  }
+  .header-info {
+    display: none;
+  }
+  .header {
+    .logo {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .header-menu {
+    display: block;
+    
+  }
+}

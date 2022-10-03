@@ -1,0 +1,36 @@
+@import '../../commons/style.scss';
+.navigation {
+  display: flex;
+  background-color: rgb(4, 12, 17);
+  height: 45px;
+  .container {
+    display: flex;
+    .navigation-link {
+      text-decoration: none;
+      padding: 10px 0;
+      color: $second-text;
+      text-align: center;
+      margin-right: 20px;
+      align-items: center;
+      display: flex;
+      position: relative;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary-color-hover;
+      }
+    }
+    .navigation-link-active {
+      border-bottom: 2px solid $primary-color-hover;
+      color: $primary-text;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .navigation {
+    display: none;
+  }
+}
